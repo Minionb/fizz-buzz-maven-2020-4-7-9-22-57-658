@@ -21,5 +21,14 @@ public class FizzBuzzTest {
 
         assertEquals("Fizz",fizzbuzz.say(3));
     }
+
+    @Test
+    public void should_return_buzz_when_equal_to_5(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        fizzbuzz.say(5);
+
+        assertEquals("Buzz",fizzbuzz.say(5));
+    }
 }
+
 
