@@ -14,6 +14,12 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    public void should_return_fizz_when_equal_to_3(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        fizzbuzz.say(3);
 
+        assertEquals("Fizz",fizzbuzz.say(3));
+    }
 }
 
