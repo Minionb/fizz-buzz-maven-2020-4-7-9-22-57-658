@@ -1,17 +1,19 @@
 package com.oocl;
 
 public class FizzBuzz {
-    public String say(int Number){
-        if((Number % 3 == 0) && (Number % 5 == 0)){
-            return "FizzBuzz";
-        }
-        else if(Number % 3 == 0){
-                return "Fizz";
-            }
 
-        else if(Number % 5 == 0){
-            return "Buzz";
+    public String say(int Number) {
+        String message = "";
+        if (Number % 3 == 0) {
+            message += "Fizz";
+
         }
-        return String.valueOf(Number);
+
+        if (Number % 5 == 0) {
+            message += "Buzz";
+
+        }
+
+        return message.equals("") ? String.valueOf(Number) : message;
     }
 }
