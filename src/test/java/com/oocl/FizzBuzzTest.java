@@ -15,7 +15,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_when_equal_to_3(){
+    public void should_return_fizz_when_multiple_of_3(){
         FizzBuzz fizzbuzz = new FizzBuzz();
         fizzbuzz.say(3);
 
@@ -23,11 +23,19 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzz_when_equal_to_5(){
+    public void should_return_buzz_when_multiple_of_5(){
         FizzBuzz fizzbuzz = new FizzBuzz();
         fizzbuzz.say(5);
 
         assertEquals("Buzz",fizzbuzz.say(5));
+    }
+
+    @Test
+    public void should_return_fizzbuzz_when_multiple_of_3_5(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        fizzbuzz.say(15);
+
+        assertEquals("FizzBuzz",fizzbuzz.say(15));
     }
 }
 
